@@ -1,0 +1,32 @@
+.flex-container{
+  background-color:#46295A;
+  display: flex;
+  flex-direction: column;
+}
+
+.title{
+  text-align: center;
+}
+
+.forms{
+  width: 100%;
+  align-items: center;
+}
+
+.example-form {
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+td {
+  padding-right: 8px;
+}
+
+.card{
+  background-color: #46295A;
+  width: auto;
+
+}
