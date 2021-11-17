@@ -8,21 +8,21 @@
             <h1>Crie uma conta</h1>
       </div>
       <div class="forms">
-        <form class="example-form">
+        <form class="example-form" [formGroup]="createAccountForm">
           <mat-card class="card">
             <mat-card-title>Dados da Conta</mat-card-title>
             <table class="example-full-width" cellspacing="0"><tr>
               <td><mat-form-field class="example-full-width" appearance="fill">
                 <mat-label>Número da Conta</mat-label>
-                <input matInput>
+                <input matInput formControlName="number" name="number">
               </mat-form-field></td>
               <td><mat-form-field class="example-full-width" appearance="fill">
                 <mat-label>Agência</mat-label>
-                <input matInput>
+                <input matInput formControlName="agency"name="agency">
               </mat-form-field></td>
               <td><mat-form-field class="example-full-width" appearance="fill">
                 <mat-label>Senha de Acesso</mat-label>
-                <input matInput>
+                <input matInput formControlName="password" name="password" type="password">
               </mat-form-field></td>
             </tr></table>
           </mat-card>
@@ -32,24 +32,26 @@
             <table class="example-full-width" cellspacing="0"><tr>
               <td><mat-form-field class="example-full-width" appearance="fill">
                 <mat-label>Nome do Cliente</mat-label>
-                <input matInput>
+                <input matInput formControlName="name" name="name">
               </mat-form-field></td>
               <td><mat-form-field class="example-full-width" appearance="fill">
                 <mat-label>CPF do Cliente</mat-label>
-                <input matInput>
+                <input matInput formControlName="document" name="document">
               </mat-form-field></td>
               <td><mat-form-field class="example-full-width" appearance="fill">
                 <mat-label>Telefone do Cliente</mat-label>
-                <input matInput>
+                <input matInput formControlName="telephones" name="telephones">
               </mat-form-field></td>
             </tr></table>
-
           </mat-card>
-
-
-
         </form>
+        <div class="example-button-row">
+          <button mat-raised-button color="primary" (click)="createAccount()">Criar Conta</button>
+        </div>
       </div>
+    </section>
+    <section>
+      {{responseMessage}}
     </section>
   </main>
 </body>

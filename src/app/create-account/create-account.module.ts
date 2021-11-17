@@ -5,6 +5,8 @@ import { CreateAccountRoutingModule } from './create-account-routing.module';
 import { CreateAccountComponent } from './create-account.component';
 import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AdministrativeService } from '../service/administrative.service';
 
 @NgModule({
   declarations: [
@@ -14,8 +16,11 @@ import {MatCardModule} from '@angular/material/card';
     CommonModule,
     CreateAccountRoutingModule,
     MatInputModule,
-    MatCardModule
+    MatCardModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
+  providers: [AdministrativeService],
   exports: [
     CreateAccountComponent
   ]
