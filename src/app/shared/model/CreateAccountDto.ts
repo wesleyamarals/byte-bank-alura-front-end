@@ -1,13 +1,13 @@
-import {AccountDto} from './AccountDto'
-import { ClientDto } from './ClientDto';
+import {Account} from './Account'
+import { Client } from './Client';
 
 export class CreateAccountDto{
 
-  constructor(accountDto: AccountDto, clientDto : ClientDto){
-    this.accountDto = accountDto;
-    this.clientDto = clientDto;
+  constructor(account: Account, client : Client){
+    this.account = account;
+    this.client = client;
   }
 
-  accountDto: AccountDto;
-  clientDto : ClientDto
+  account: Account;
+  client : Client;
 }

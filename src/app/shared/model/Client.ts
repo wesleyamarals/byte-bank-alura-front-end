@@ -1,4 +1,4 @@
-export class ClientDto{
+export class Client{
 
   constructor(name : string, document : string|number, password : string, telephones : string[]|number[] ){
     this.name = name;
