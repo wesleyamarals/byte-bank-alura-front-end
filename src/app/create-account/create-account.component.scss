@@ -1,31 +1,55 @@
-.flex-container{
-  background-color:#46295A;
-  display: flex;
-  flex-direction: column;
+body{
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
-.title{
-  text-align: center;
+
+main {
+  background-color: #240524;
+  margin-top: 50px;
+  width: 50%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  color: white;
 }
 
 .forms{
   width: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
 .example-form {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.account-data {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-.example-full-width {
+.client-data {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
 }
 
-td {
-  padding-right: 8px;
-}
-
-.card{
-  background-color: #46295A;
-  width: auto;
+.example-button-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 490px;
+  margin-bottom: 20px;
 }

@@ -7,6 +7,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdministrativeService } from '../service/administrative.service';
+import {MatButtonModule} from '@angular/material/button';
+import { DialogModule } from '../shared/dialog/dialog.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { AdministrativeService } from '../service/administrative.service';
     MatInputModule,
     MatCardModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatButtonModule,
+    DialogModule
   ],
   providers: [AdministrativeService],
   exports: [
