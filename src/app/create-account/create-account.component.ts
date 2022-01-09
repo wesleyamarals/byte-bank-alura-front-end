@@ -22,11 +22,11 @@ export class CreateAccountComponent implements OnInit {
 
   ngOnInit(): void {
     this.createAccountForm = this.formBuilder.group({
-      number: ['',Validators.required, Validators.pattern('\d+')],
-      agency: ['',Validators.required, Validators.pattern('\d+')],
+      number: ['',Validators.required],
+      agency: ['',[Validators.required, Validators.minLength(4), Validators.maxLength(4) ]],
       name: ['',Validators.required],
-      document: ['',Validators.required, Validators.pattern('\d+'), Validators.minLength(11), Validators.maxLength(11)],
-      password: ['',Validators.required, Validators.minLength(4), Validators.maxLength(4)],
+      document: ['', [Validators.required, Validators.minLength(11), Validators.maxLength(11)]],
+      password: ['',[Validators.required, Validators.minLength(4), Validators.maxLength(4)]],
       telephones: ['',Validators.required]
     })
   }
